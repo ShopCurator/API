@@ -61,9 +61,9 @@ namespace Microservices.Controllers
         // POST api/values
         [HttpPost]
         //public async Task<string> Post([FromBody]Dictionary<string,Product> products)
-        public async Task<string> Post([FromBody] List <Product> products)
+        public async Task<string> Post([FromBody] IEnumerable<Product> products)
         {
-            var p = products;
+            //var p = products;
             //foreach(var product in products.Values)
             foreach (var product in products)
             {
