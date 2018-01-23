@@ -19,16 +19,16 @@ namespace Microservices.Controllers
             _iProductRepository = iProductRepository;
         }
 
-        //List<string> list = new List<string>();
-        // GET api/values
-        [HttpGet]
-        public Task<string> GetAll() => GetAllProducts();
+       
+        //// GET api/values
+        //[HttpGet]
+        //public Task<string> GetAll() => GetAllProducts();
 
-        private async Task<string> GetAllProducts(){
+        //private async Task<string> GetAllProducts(){
 
-            var products = await _iProductRepository.GetAll();
-            return JsonConvert.SerializeObject(products);
-        }
+        //    var products = await _iProductRepository.GetAll();
+        //    return JsonConvert.SerializeObject(products);
+        //}
 
 
 
