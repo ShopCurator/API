@@ -9,6 +9,7 @@ namespace Microservices.Model
     {
         Task<IEnumerable<Product>> GetAll();
         Task<Product> Get(string id);
+        Task<long> GetCount();
         Task<IEnumerable<Product>> GetByName(string name);
         Task Add(Product product);
         Task<string> Update(string id , Product product);

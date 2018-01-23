@@ -24,6 +24,10 @@ namespace Microservices.ViewModel
             await _objectContext.Products.InsertOneAsync(product);
         }
 
+        public async Task<long> GetCount()
+        {
+            return await _objectContext.Products.Find(x => true).CountAsync();
+        }
         public async Task<IEnumerable<Product>> GetAll()
         {
             return await _objectContext.Products.Find(x => true).ToListAsync();

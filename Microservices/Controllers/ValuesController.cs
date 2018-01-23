@@ -19,12 +19,19 @@ namespace Microservices.Controllers
             _iProductRepository = iProductRepository;
         }
 
-       
-        //// GET api/values
-        //[HttpGet]
-        //public Task<string> GetAll() => GetAllProducts();
 
-        //private async Task<string> GetAllProducts(){
+        //// GET api/values
+        [HttpGet]
+        public Task<long> GetAll() => GetTotalCount();
+        private async Task<long> GetTotalCount()
+        {
+
+            var products = await _iProductRepository.GetCount();
+            return products;
+        }
+
+        //private async Task<string> GetAllProducts()
+        //{
 
         //    var products = await _iProductRepository.GetAll();
         //    return JsonConvert.SerializeObject(products);
@@ -61,7 +68,7 @@ namespace Microservices.Controllers
         // POST api/values
         [HttpPost]
         //public async Task<string> Post([FromBody]Dictionary<string,Product> products)
-        public async Task<string> Post([FromBody] IEnumerable<Product> products)
+        public async Task<string> Post([FromBody] List<Product> products)
         {
             //var p = products;
             //foreach(var product in products.Values)

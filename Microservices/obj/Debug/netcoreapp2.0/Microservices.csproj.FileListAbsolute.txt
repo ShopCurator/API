@@ -8,3 +8,4 @@ C:\Users\avinash.eediga\Documents\Code\API\Microservices\obj\Debug\netcoreapp2.0
 C:\Users\avinash.eediga\Documents\Code\API\Microservices\obj\Debug\netcoreapp2.0\Microservices.AssemblyInfo.cs
 C:\Users\avinash.eediga\Documents\Code\API\Microservices\obj\Debug\netcoreapp2.0\Microservices.dll
 C:\Users\avinash.eediga\Documents\Code\API\Microservices\obj\Debug\netcoreapp2.0\Microservices.pdb
+C:\Users\avinash.eediga\Documents\Code\API\Microservices\obj\Debug\netcoreapp2.0\Microservices.csprojResolveAssemblyReference.cache
